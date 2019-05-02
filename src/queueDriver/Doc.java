@@ -3,10 +3,10 @@ package queueDriver;
 /**
  * A Doc has a size, in blocks, to be printed.
  * 
- * @author (sdb) 
- * @version (Oct 2017)
+ * @author (Chris Sickler) 
+ * @version (04/30/19)
  */
-public class Doc
+public class Doc implements Comparable
 {
     private int size;      // size of this Doc, in blocks
 
@@ -21,6 +21,15 @@ public class Doc
     public int size()
     {   return size;  }
    
+    public int compareTo(Object obj) {
+    	Doc other = (Doc) obj;
+    	
+    	if(this.size < other.size)
+    		return 1;
+    	return -1;
+    	
+    }
+    
     public String toString() {
     	return "Doc of size " + size;
     }
