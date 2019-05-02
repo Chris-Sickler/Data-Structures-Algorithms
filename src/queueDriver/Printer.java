@@ -6,7 +6,7 @@ import queue.*;
  * A Printer has a speed, in blocks of printing per step, and a queue of Docs to be printed
  * 
  * @author (sdb & Chris Sickler)
- * @version (Oct 2017)
+ * @version (04/30/19)
  */
 public class Printer
 {
@@ -23,7 +23,7 @@ public class Printer
     {
       this.speed = speed;
       this.id = id;
-      docs = new Queue<Doc>();
+      docs = new PriorityQueue<Doc>();
       free = true;
     }
 
