@@ -44,4 +44,12 @@ public class TableIterator<K> implements Iterator<K> {
 		itty.remove();
 		table.size--;
 	}
+	
+	//Final Exam
+	public boolean has2more() {
+		if(itty.hasNext()) {
+			itty.next();
+		}
+		return itty.hasNext();
+	}
 }
