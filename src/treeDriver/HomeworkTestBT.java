@@ -28,6 +28,8 @@ public class HomeworkTestBT
   //  kids = kids.add ("sue");            // am
 
     kids = kids.add ("al");
+    
+    System.out.println(kids.height());
 
       // Iterator should provide an inorder traversal
       System.out.println ("The names below are in alphabetic order");
@@ -46,9 +48,5 @@ public class HomeworkTestBT
      itty = kids.iterator();
      while (itty.hasNext())
         System.out.print (itty.next() + " ");     // Should be  [al,jo,joe]
-        
- 
-        
-     
     }
 }
