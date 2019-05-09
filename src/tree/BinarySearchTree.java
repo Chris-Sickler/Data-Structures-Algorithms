@@ -122,4 +122,17 @@ public class BinarySearchTree<E extends Comparable> implements BinaryTree<E> {
 		}
 		return treeString + "]";
 	}
+	
+	//Final Exam
+	public int height() {
+		if(this.isEmpty())
+			return 0;
+		if(right.isEmpty())
+			return 1 + left.height();
+		if(left.isEmpty())
+			return 1 + right.height();
+		if(left.height() > right.height())
+			return 1 + left.height();
+		return 1 + right.height();
+	}
 }
