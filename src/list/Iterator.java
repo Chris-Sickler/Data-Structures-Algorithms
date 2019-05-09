@@ -20,9 +20,7 @@ public interface Iterator <E> {
 	 */
 	void remove();
 	
-	/** @return true iff there are at least two more values in this iteration.
-	 */
-	//boolean has2more();
-
-	
+	/** @return true iff there are at least two more items remaining 
+	  * to be visited for this Iterator */
+	boolean has2more();	
 }
