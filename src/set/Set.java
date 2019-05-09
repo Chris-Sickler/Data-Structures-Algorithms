@@ -44,4 +44,7 @@ public interface Set<E> {
 	
 	/** @return true iff this Set is a subset of the other Set */
 	boolean isSubset(Set< E> other);
+	
+	/** @return a Set which is the intersection of this Set with the other Set */
+	Set < E> intersection (Set < E> other);
 }

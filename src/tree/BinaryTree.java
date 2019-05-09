@@ -52,5 +52,6 @@ public interface BinaryTree<E>
 	/** @return an Inorder iterator for this BT */
 	Iterator<E> iterator();
 	
-	
+	/** @return the height of the family of this Binary Tree */
+	int height();
 }
