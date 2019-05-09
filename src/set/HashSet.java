@@ -108,4 +108,20 @@ public class HashSet<E> implements Set<E>{
 		}
 		return true;
 	}
+	
+	//Final Exam
+	public Set<E> intersection(Set <E> other){
+		if(this.isEmpty()) 
+			return this;
+		if(other.isEmpty())
+			return other;
+		Set<E> temp = new HashSet<E>();
+		Iterator<E> it = this.iterator();
+		while(it.hasNext()) {
+			E next = it.next();
+			if(other.contains(next)) 
+				temp.add(next);
+		}
+		return temp;
+	}
 }
